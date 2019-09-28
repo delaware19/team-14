@@ -23,7 +23,8 @@ function FAQs() {
         </div>
       </nav>
       </header>
-      <div class="container"><p>
+
+        <div class="container"><p>
         <h2>Frequently Asked Questions:</h2> <br></br>
 
         <h4>What is Hopeanomics?</h4>
@@ -40,14 +41,17 @@ function FAQs() {
         <h4>How can I get more involved?</h4>
         If your interested in joining our team, go to our
         application page <a href="https://www.risenow.us/apply" target="_blank">HERE</a>!
-        </p>
-        </div> 
-        <textarea rows="8" cols="70"></textarea>&nbsp;&nbsp;&nbsp;
-        <p>
-          
-        </p>
-        <button className="btn"><Link to="/home">Submitted</Link></button>&nbsp;
+        <br></br><br></br>
 
+        </p>
+        
+        <form action="/action_page.php">
+        <textarea name="message" rows="10" cols="50">Questions, concerns, or suggestions? Submit them here!</textarea>
+        <br></br>
+        <input type="submit" class="btn" color="white"></input>
+        </form>
+        <br></br>
+        </div> 
     </div>
   );
 }

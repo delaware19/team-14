@@ -36,22 +36,22 @@ function Games() {
         <p><font size="+2"><b>Phase 2: Coalition Building</b></font></p>
         <button type="button" class="btn btn-warning"><Link to="/level4">Level 4</Link></button> &nbsp;&nbsp;&nbsp;
         <button type="button" class="btn btn-warning"><Link to="/level5">Level 5</Link></button> &nbsp;&nbsp;&nbsp;
-        <button type="button" class="btn btn-warning"><Link to="/level6">Level 6</Link></button> &nbsp;&nbsp;&nbsp;
+        <button type="button" class="btn btn-warning"><Link to="/level6">Level 6</Link></button> &nbsp;&nbsp;&nbsp; 
         </div>
         <p></p>
         <div>
         <p><font size="+2"><b>Phase 3: Storytelling</b></font></p>
         <button type="button" class="btn btn-info"><Link to="/level7">Level 7</Link></button> &nbsp;&nbsp;&nbsp;
         <button type="button" class="btn btn-info"><Link to="/level8">Level 8</Link></button> &nbsp;&nbsp;&nbsp;
-        <button type="button" class="btn btn-info"><Link to="/level9">Level 9</Link></button> &nbsp;&nbsp;&nbsp;
+        <button type="button" class="btn btn-info"><Link to="/level9">Level 9</Link></button> &nbsp;&nbsp;&nbsp; 
         </div>
         <p></p>
         <div>
         <p><font size="+2"><b>Phase 4: Lawmaking</b></font></p>
         <button type="button" class="btn btn-primary"><Link to="/level10">Level 10</Link></button> &nbsp;&nbsp;&nbsp;
         <button type="button" class="btn btn-primary"><Link to="/level11">Level 11</Link></button> &nbsp;&nbsp;&nbsp;
-        <button type="button" class="btn btn-primary"><Link to="/level12">Level 12</Link></button> &nbsp;&nbsp;&nbsp;
-        <button type="button" class="btn btn-primary"><Link to="/level13">Level 13</Link></button> &nbsp;&nbsp;&nbsp;
+        <button type="button" class="btn btn-primary"><Link to="/level12">Level 12</Link></button> &nbsp;&nbsp;&nbsp; 
+        <button type="button" class="btn btn-primary"><Link to="/level13">Level 13</Link></button> &nbsp;&nbsp;&nbsp; 
         </div>
         <p></p>
 
