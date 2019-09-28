@@ -56,6 +56,12 @@ function Level2() {
 </div>
 
 
+<br></br>
+<br></br>
+
+        <img src="https://www.guttmacher.org/sites/default/files/styles/focal_point_preview/public/images/statelawsandpoliciesdarkgreen.jpg?itok=_gbiB8KM&amp;timestamp=1459353974" className="App-logo" alt="logo" /> <br></br>
+
+
         <p>
         <h3>
        <a href="https://www.justice.gov/civil/current-and-recent-cases">Click here to see an overview of important federal cases!</a>

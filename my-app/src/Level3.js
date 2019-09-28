@@ -22,14 +22,15 @@ function Level3() {
         
         <h3> Level 3 </h3>
         <h4>
-        <div class="container">Insert description for level three <br></br>
-        Goal: Level Three: Insert goal for level three  <br></br><br></br>
+        <div class="container">Confirm deadlines <br></br>
+        Deadlines are essential when it comes to important court cases. Here you can add important dates to your calendar
+        and click to receive updates <br></br><br></br>
         
 
         </div></h4>
 
         <br></br>
-        <img src="https://uploads-ssl.webflow.com/5c98fd7e7e3bc9bee0816b45/5c99709e0113b8a168fec8fa_RiseLogo_02.svg" className="App-logo" alt="logo" /> <br></br>
+
         <p>
         <h3>
        <a href="https://www.ontheissues.org/default.htm">See what legislation our politicians support!</a>
