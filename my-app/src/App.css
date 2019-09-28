@@ -1,3 +1,26 @@
+body {
+  background-image: url("https://www.xmple.com/wallpaper/orange-gradient-linear-red-1920x1080-c2-ff8c00-dc143c-a-150-f-14.svg");
+}
+
+p {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  text-align: center;
+  display: inline-block;
+}
+
+img {
+  height: 45px;
+}
+
 .App {
   text-align: center;
 }
@@ -7,7 +30,7 @@
 }
 
 .App-header {
-  background-color: #d36b09;
+  background-color: white;
   min-height: 15vh;
   display: flex;
   flex-direction: column;
@@ -22,12 +45,21 @@
 }
 
 .btn {
-  background-color: rgb(255, 255, 255); 
-  border: 2px solid black;
+  background-color: rgb(255, 111, 15); 
+  border: 2px solid white;
   color: black;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
+  text-decoration: none; 
   display: inline-block;
   font-size: 16px;
 }
+
+/* unvisited link */
+a:link {color: white;}
+/* visited link */
+a:visited {color: white;}
+/* mouse over link */
+a:hover {color: black;}
+/* selected link */
+a:active {color: white;}
