@@ -13,6 +13,7 @@ function Home() {
       <nav>
         <div>
         <button class="btn"><Link to="/home">Home</Link></button>
+        <button class="btn"><Link to="/games">Games</Link></button>
         <button class="btn"><Link to="/faqs">FAQs</Link></button>
         <button class="btn"><Link to="/settings">Settings</Link></button>
         <button class="btn"><Link to="/">Logout</Link></button>

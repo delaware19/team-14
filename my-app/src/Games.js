@@ -1,13 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Home from './Home';
 import FAQs from './FAQs';
+import Settings from './Settings';
+import Home from './Home';
 import { Switch, Route, Link } from "react-router-dom";
 
-function Settings() {
+function Games() {
   return (
-    <div className="Settings">
+    <div className="Games">
 
     <header className="App-header">
       <nav>
@@ -24,10 +25,10 @@ function Settings() {
       <img src={logo} className="App-logo" alt="logo" /> <br></br>
 
         <p>
-          This is the Settings page.
+          This is the Games page.
         </p>
     </div>
   );
 }
 
-export default Settings;
+export default Games;

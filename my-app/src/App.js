@@ -5,6 +5,7 @@ import Home from './Home';
 import FAQs from './FAQs';
 import Settings from './Settings';
 import Login from './Login';
+import Games from './Games';
 import CreateAccount from './CreateAccount';
 import { Switch, Route, Link } from "react-router-dom";
 
@@ -18,6 +19,9 @@ function App() {
         </Route>
         <Route path="/faqs">
           <FAQs />
+        </Route>
+        <Route path="/games">
+          <Games />
         </Route>
         <Route path="/settings">
           <Settings />
