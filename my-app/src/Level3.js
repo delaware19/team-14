@@ -7,9 +7,9 @@ import Settings from './Settings';
 
 import { Switch, Route, Link } from "react-router-dom";
 
-function Level1() {
+function Level3() {
   return (
-    <div className="Level1">
+    <div className="Level3">
 
     <header className="App-header">
       <nav>
@@ -20,10 +20,10 @@ function Level1() {
       </header>
 
         
-        <h3> Level 1 </h3>
+        <h3> Level 3 </h3>
         <h4>
-        <div class="container">Insert description for level one <br></br>
-        Goal: Level One: Insert goal for level one  <br></br><br></br>
+        <div class="container">Insert description for level three <br></br>
+        Goal: Level Three: Insert goal for level three  <br></br><br></br>
         
 
         </div></h4>
@@ -45,4 +45,4 @@ function Level1() {
   );
 }
 
-export default Level1;
+export default Level3;

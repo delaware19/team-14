@@ -8,6 +8,8 @@ import Login from './Login';
 import Games from './Games';
 import CreateAccount from './CreateAccount';
 import Level1 from './Level1';
+import Level2 from './Level2';
+import Level3 from './Level3';
 import Level4 from './Level4';
 import Level5 from './Level5';
 import { Switch, Route, Link } from "react-router-dom";
@@ -37,6 +39,12 @@ function App() {
         </Route>
         <Route path="/level1">
           <Level1 />
+        </Route>
+        <Route path="/level2">
+          <Level2 />
+        </Route>
+        <Route path="/level3">
+          <Level3 />
         </Route>
         <Route path="/level4">
           <Level4 />
