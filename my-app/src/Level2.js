@@ -22,17 +22,43 @@ function Level2() {
         
         <h3> Level 2 </h3>
         <h4>
-        <div class="container">Insert description for level two <br></br>
-        Goal: Level Two: Insert goal for level two  <br></br><br></br>
-        
-
+        <div class="container">Research the political landscape for your state.  <br></br>
+        Goal: Find out exactly how the legislative process works in your area. What do you have to do to affect change? <br></br><br></br>
         </div></h4>
-
         <br></br>
+
+    
+    <div class="container">
+    <p><h3>Choose a State:</h3></p>
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Select one 
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delaware</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">New York</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">New Jersey</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Florida</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">California</a></li>
+    </ul>
+  </div>
+
+  <p><h3>Choose an Area of Law:</h3></p>
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Select one 
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sexual assault</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Domestic violence</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Gun violence</a></li>
+    </ul>
+    
+  </div>
+</div>
+
 
         <p>
         <h3>
-       <a href="https://www.ontheissues.org/default.htm">See what legislation our politicians support!</a>
+       <a href="https://www.justice.gov/civil/current-and-recent-cases">Click here to see an overview of important federal cases!</a>
        </h3>
 
         

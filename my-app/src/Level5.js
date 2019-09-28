@@ -29,13 +29,11 @@ function Level5() {
         </div></h4>
 
         <br></br>
-
+        <img src="https://cdn.britannica.com/06/77406-050-37596D86/United-States-Capitol-place-Washington-DC-US.jpg" className="App-logo" alt="logo" /> <br></br>
         <p>
         <h3>
-       <a href="https://www.ontheissues.org/default.htm">See what legislation our politicians support!</a>
+       <a href="https://www.ontheissues.org/default.htm">Click here to see what legislation our politicians support!</a>
        </h3>
-
-        
 
         <br></br>
       
