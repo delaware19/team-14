@@ -8,7 +8,10 @@ import { Switch, Route, Link } from "react-router-dom";
 function Home() {
   return (
     <div className="Home">
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <header className="App-header">
       <nav>
         <div>
@@ -24,35 +27,18 @@ function Home() {
       <img src="https://uploads-ssl.webflow.com/5c98fd7e7e3bc9bee0816b45/5c99709e0113b8a168fec8fa_RiseLogo_02.svg" className="App-logo" alt="logo" /> <br></br>
 
       <div class="container">
-    <p><h3>Choose a State:</h3></p>
+    <h2>Choose Your State:</h2>
     <div class="dropdown">
-      <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Select one 
+      <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Find Your State Here
     <span class="caret"></span></button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delaware</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">New York</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">New Jersey</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Florida</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">California</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
     </ul>
   </div>
-
-  <p><h3>Choose an Area of Law:</h3></p>
-    <div class="dropdown">
-      <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Select one 
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sexual assault</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Domestic violence</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Gun violence</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">All</a></li>
-    </ul>
-    
-  </div>
-
-  <br></br><br></br>
-  <button class="btn"><Link to="/home">Search</Link></button> <br></br>
-
   </div>
     </div>
   );

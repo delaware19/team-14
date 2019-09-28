@@ -22,13 +22,10 @@ function Settings() {
       </nav>
       </header>
 
-        <p>
-        <h3>SETTINGS</h3>
+      <img src={logo} className="App-logo" alt="logo" /> <br></br>
 
-        <br></br>
-        <button class="btn"><Link to="/settings">Edit Username</Link></button> <br></br><br></br>
-        <button class="btn"><Link to="/settings">Change Email</Link></button> <br></br><br></br>
-        <button class="btn"><Link to="/settings">Change Password</Link></button> <br></br><br></br>
+        <p>
+          This is the Settings page.
         </p>
     </div>
   );
