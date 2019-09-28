@@ -7,6 +7,7 @@ import Settings from './Settings';
 import Login from './Login';
 import Games from './Games';
 import CreateAccount from './CreateAccount';
+import Level1 from './Level1';
 import { Switch, Route, Link } from "react-router-dom";
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
         </Route>
         <Route path="/createaccount">
           <CreateAccount />
+        </Route>
+        <Route path="/level1">
+          <Level1 />
         </Route>
 
         <Route path="/">

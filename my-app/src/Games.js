@@ -25,7 +25,9 @@ function Games() {
       <img src={logo} className="App-logo" alt="logo" /> <br></br>
 
         <p>
-          This is the Games page.
+          This is the Games page. <br></br><br></br>
+
+          <button class="btn"><Link to="/level1">Level 1</Link></button>
         </p>
     </div>
   );
