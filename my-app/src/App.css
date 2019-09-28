@@ -2,13 +2,24 @@ body {
   background-image: url("https://www.xmple.com/wallpaper/orange-gradient-linear-red-1920x1080-c2-ff8c00-dc143c-a-150-f-14.svg");
 }
 
-p {
-  color: white;
-}
+.button {
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
 
-h3 {
-  color: white;
-}
+  .button {border-radius: 12px;}
+
+p {color: white;}
+
+h2 {color: white;}
+h3 {color: white;}
 
 .container {
   position: relative;
@@ -17,9 +28,7 @@ h3 {
   display: inline-block;
 }
 
-img {
-  height: 45px;
-}
+img {height: 45px;}
 
 .App {
   text-align: center;
@@ -63,3 +72,48 @@ a:visited {color: white;}
 a:hover {color: black;}
 /* selected link */
 a:active {color: white;}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
