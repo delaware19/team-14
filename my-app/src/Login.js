@@ -18,8 +18,10 @@ function Login() {
         <br></br>
         <div class="apply-form-group-item half"><label for="Email" class="apply-field-label-medium"><p>Email* </p></label><input type="text" class="apply-text-field w-input" maxlength="256" name="Text" data-name="Text" id="Text" required=""/></div>
         
-        <br></br><br></br>
-        <div class="apply-form-group-item half"><label for="Password" class="apply-field-label-medium"><p>Password* </p></label><input type="text" class="apply-text-field w-input" maxlength="256" name="Text" data-name="Text" id="Text" required=""/></div>
+        <br></br>
+        <div><label for="pass"><p>Password</p>
+        </label><input type="password" id="pass" name="password"minlength="8" required>
+        </input></div>
 
         <br></br>
 
