@@ -9,20 +9,9 @@ import { Switch, Route, Link } from "react-router-dom";
 function Login() {
   return (
     <div className="Login">
-        <header className="App-header">
-          <img src="https://uploads-ssl.webflow.com/5c98fd7e7e3bc9bee0816b45/5ca67dd40adf050aede96294_Asset%201.svg"/>  
-          </header>
-          
-        <p> <h3>LOGIN</h3>
+        <header className="App-header"></header>
 
-        <br></br>
-        <div class="apply-form-group-item half"><label for="Email" class="apply-field-label-medium">Email* </label><input type="text" class="apply-text-field w-input" maxlength="256" name="Text" data-name="Text" id="Text" required=""/></div>
-        
-        <br></br><br></br>
-        <div class="apply-form-group-item half"><label for="Password" class="apply-field-label-medium">Password* </label><input type="text" class="apply-text-field w-input" maxlength="256" name="Text" data-name="Text" id="Text" required=""/></div>
-        </p>
-
-        <br></br>
+        <p> Login here!</p>
 
         <button class="btn"><Link to="/home">Submit</Link></button> <br></br>
       
