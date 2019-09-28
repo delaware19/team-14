@@ -41,15 +41,11 @@ function App() {
           <header className="App-header">
           <img src="https://uploads-ssl.webflow.com/5c98fd7e7e3bc9bee0816b45/5ca67dd40adf050aede96294_Asset%201.svg"/>  
           </header>
-          <br></br><h3> Welcome to Rise!</h3>
-          <div class="container"><p> Rise is grounded in the belief that the voices of ordinary citizens matter, 
-            regardless of their background or age. This social movement blueprint revolutionizes 
-            how laws are created by organizing and empowering citizens to pen their own rights 
-            into existence. By identifying key battleground states, catalyst points for the movement, 
-            Rise creates a ripple of inspiration in other states across the nation demanding these 
-            rights are codified. The process—training organizers, telling compelling narratives in 
-            the media,creating visual cultural moments of protest, pushing legislators and building 
-            support between unexpected allies—has helped pass 21 bills to date.</p></div><br></br><br></br>
+          <br></br><h2> WELCOME TO RISE</h2>
+          <div class="container"><p> Rise is grounded in the belief that the voices of ordinary citizens matter. 
+            This social movement blueprint revolutionizes how laws are created by organizing and empowering 
+            citizens to pen their own rights into existence and creates a ripple of inspiration in states 
+            across the nation. Rise has helped pass 27 bills to date. Will you be a part of the movement too?</p></div><br></br><br></br>
           <button class="btn"><Link to="/login">Login</Link></button> <br></br> <br></br>
           <button class="btn"><Link to="/createaccount">Create an Account</Link></button> <br></br>
         </Route>

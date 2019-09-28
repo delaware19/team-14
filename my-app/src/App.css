@@ -2,13 +2,9 @@ body {
   background-image: url("https://www.xmple.com/wallpaper/orange-gradient-linear-red-1920x1080-c2-ff8c00-dc143c-a-150-f-14.svg");
 }
 
-p {
-  color: white;
-}
+p {color: white;}
 
-h3 {
-  color: white;
-}
+h2 {color: white;}
 
 .container {
   position: relative;
@@ -17,9 +13,7 @@ h3 {
   display: inline-block;
 }
 
-img {
-  height: 45px;
-}
+img {height: 45px;}
 
 .App {
   text-align: center;
