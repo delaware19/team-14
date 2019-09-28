@@ -41,7 +41,16 @@ function FAQs() {
         <h4>How can I get more involved?</h4>
         If your interested in joining our team, go to our
         application page <a href="https://www.risenow.us/apply" target="_blank">HERE</a>!
+        <br></br><br></br>
+
         </p>
+        
+        <form action="/action_page.php">
+        <textarea name="message" rows="10" cols="50">Questions, concerns, or suggestions? Submit them here!</textarea>
+        <br></br>
+        <input type="submit" class="btn" color="white"></input>
+        </form>
+        <br></br>
         </div> 
     </div>
   );

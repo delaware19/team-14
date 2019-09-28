@@ -45,9 +45,13 @@ function Home() {
       <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sexual assault</a></li>
       <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Domestic violence</a></li>
       <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Gun violence</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">All</a></li>
     </ul>
     
   </div>
+
+  <br></br><br></br>
+  <button class="btn"><Link to="/home">Search</Link></button> <br></br>
 
   </div>
     </div>
