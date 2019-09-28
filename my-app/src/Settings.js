@@ -26,9 +26,9 @@ function Settings() {
         <h3>SETTINGS</h3>
 
         <br></br>
-        <button class="btn"><Link to="/">Edit Username</Link></button> <br></br><br></br>
-        <button class="btn"><Link to="/">Change Email</Link></button> <br></br><br></br>
-        <button class="btn"><Link to="/">Change Password</Link></button> <br></br><br></br>
+        <button class="btn"><Link to="/settings">Edit Username</Link></button> <br></br><br></br>
+        <button class="btn"><Link to="/settings">Change Email</Link></button> <br></br><br></br>
+        <button class="btn"><Link to="/settings">Change Password</Link></button> <br></br><br></br>
         </p>
     </div>
   );
