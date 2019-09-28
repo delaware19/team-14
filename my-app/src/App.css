@@ -2,6 +2,20 @@ body {
   background-image: url("https://www.xmple.com/wallpaper/orange-gradient-linear-red-1920x1080-c2-ff8c00-dc143c-a-150-f-14.svg");
 }
 
+.button {
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+
+  .button {border-radius: 12px;}
+
 p {color: white;}
 
 h2 {color: white;}
