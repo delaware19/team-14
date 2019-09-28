@@ -4,6 +4,7 @@ import './App.css';
 import Home from './Home';
 import Settings from './Settings';
 
+
 import { Switch, Route, Link } from "react-router-dom";
 
 function Level5() {
@@ -20,10 +21,9 @@ function Level5() {
 
         <p>
         <h3>Level 5</h3>
-        <div class="container"><p>Meet with like-minded
-        groups (nonprofits, cultural influences, etc.) and share your vision for change! <br></br>
-        Goal: research one contact, upload their information below, and reach out! After submitting, 
-        you may proceed to the next phase.</p></div>
+        <div class="container"><p>Identify representatives and senators that support your cause. <br></br>
+        Goal: Level Five: Identify Legislators with Passion for Your Cause and Share Your Personal Story
+        </p></div>
 
         <br></br>
         <br></br>
@@ -38,6 +38,12 @@ function Level5() {
         <br></br>
         <form action="/action_page.php"><input type="file" name="pic" accept="image/*"></input>
         </form>
+
+        
+       <a href="https://www.ontheissues.org/default.htm">See what legislation our politicians support!</a>
+
+
+        
 
         <br></br>
       <button type="button" onclick="alert('Submitted')" button class="button button">Submit</button>
