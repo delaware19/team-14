@@ -4,6 +4,8 @@ import './App.css';
 import Home from './Home';
 import FAQs from './FAQs';
 import Settings from './Settings';
+import Login from './Login';
+import CreateAccount from './CreateAccount';
 import { Switch, Route, Link } from "react-router-dom";
 
 function App() {
@@ -20,12 +22,18 @@ function App() {
         <Route path="/settings">
           <Settings />
         </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
+        <Route path="/createaccount">
+          <CreateAccount />
+        </Route>
 
         <Route path="/">
           <header className="App-header"></header>
           <p> Welcome to Rise! <br></br> <br></br>
-          <button class="btn"><Link to="/home">Login</Link></button> <br></br> <br></br>
-          <button class="btn"><Link to="/home">Create an Account</Link></button> <br></br></p>
+          <button class="btn"><Link to="/login">Login</Link></button> <br></br> <br></br>
+          <button class="btn"><Link to="/createaccount">Create an Account</Link></button> <br></br></p>
         </Route>
 
       </Switch>
