@@ -42,7 +42,7 @@ function App() {
           <img src="https://uploads-ssl.webflow.com/5c98fd7e7e3bc9bee0816b45/5ca67dd40adf050aede96294_Asset%201.svg"/>  
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"></link>
           </header>
-          <br></br><h3><font size="+4"><b>Welcome to Rise!</b></font></h3>
+          <br></br><h3><font size="+4"><b><p>Welcome to Rise!</p></b></font></h3>
           <div class="container"><p><b><font size="+2"> Rise is grounded in the belief that the voices of ordinary citizens matter, 
             regardless of their background or age. This social movement blueprint revolutionizes 
             how laws are created by organizing and empowering citizens to pen their own rights 
