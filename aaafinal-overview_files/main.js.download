@@ -1,0 +1,221 @@
+/************************************************
+*************************************************
+1. Action Query
+*************************************************
+************************************************/
+
+/*----------------------------------------------
+------------------------------------------------
+1. Action Query
+------------------------------------------------
+----------------------------------------------*/
+$( document ).ready(function() {
+  //Initiat WOW JS
+  new WOW().init();
+
+  // ===== Main menu Active color. ==== 
+  $(function() {
+    var page = window.location.pathname;
+    $("header .navbar-nav li a").parent().removeClass("active");
+    $("header .navbar-nav li a").filter('[href="'+page+'"]').parent().addClass('active');
+  });
+
+  $('.navbar-toggler').click(function(){
+      $('.animated-icon1').toggleClass('open');
+      $('.main-navbar').toggleClass('white-navbar').delay(1500);
+  });
+
+  // Shrink Menu
+  $(window).on("scroll", function() {
+    if ($(window).scrollTop() >= 80) {
+      $(".navbar").addClass("compressed");
+      $("#contact").addClass("contact-shrink-top");
+    } else {
+      $(".navbar").removeClass("compressed");
+      $("#contact").removeClass("contact-shrink-top");
+    }
+  });
+
+  // Contact Open Close
+  $('.contact-open').click(function(){
+      event.preventDefault();
+      $('#contact').toggleClass('fadeOutUp fadeInDown');
+  });
+
+  // ===== Get Varialbes from url ==== 
+  function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+      value = value.replace("/", "");
+      vars[key] = value;
+    });
+    return vars;
+  }
+
+   // Contact Form Thank you note Data validation
+    $(document).on('submit', '#contact_form', function(event) {   
+        event.preventDefault();
+        // Disable the submit button while evaluating if the form should be submitted
+        $('#contact_button').prop('disabled', true);
+
+        var re = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+        var rsvp_name = document.forms["contact_form"]["name"].value;
+        var rsvp_email = document.forms["contact_form"]["email"].value;
+        var rsvp_number = document.forms["contact_form"]["comments"].value;
+        var is_email = re.test(rsvp_email);
+    if (rsvp_name == null || rsvp_name == "" || rsvp_email == null || rsvp_email == "" || rsvp_number == null || rsvp_number == "") {
+        alert("Required field (*) must be filled out");
+        // Reactivate the button if the form was not submitted
+        $('#contact_button').prop('disabled', false);
+        return false;
+        }
+    if(!is_email) {
+        alert("A valid email address is required");
+        // Reactivate the button if the form was not submitted
+        $('#contact_button').prop('disabled', false);
+        return false;
+    }
+    else {
+        var data = $(this).serialize();
+        $.ajax({
+        type : 'POST',
+        url  : '/includes/swift-php-emailer.php',
+        data : data,
+        success :  function(data)
+                   {                        
+                        $("#contact_form").fadeOut(500).hide(function()
+                        {
+                            $("#success_message").fadeIn(500).show(function()
+                            {
+                                $("#success_message").html(data);
+                            });
+                        });
+                        
+                   }
+        });
+        return false;
+        }
+    });
+
+
+// ======== Google Map =======
+if ($("#google-map").length > 0) {
+
+  map_initialize();
+ function map_initialize() {
+    mapOptions = {
+        maxZoom: 16,
+        scrollwheel: false,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+
+    map = new google.maps.Map(document.getElementById("google-map"),mapOptions);
+
+    bounds = new google.maps.LatLngBounds();
+
+    markers =[];
+
+    infowindow = new google.maps.InfoWindow();
+
+    mapPinparks = {
+        url: '/images/map-pin.png',
+        scaledSize: new google.maps.Size(35, 62),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(17.5, 31)
+      };
+
+      // Close info box when click on map
+      google.maps.event.addListener(map, "click", function(event) {
+          infowindow.close();
+      });
+
+      // Google Map Info Box Styling
+      google.maps.event.addListener(infowindow, 'domready', function() {
+         var iwOuter = $('.gm-style-iw');
+         $(".gm-style-iw").next("div").hide();
+         var iwBackground = iwOuter.prev();
+         iwBackground.children(':nth-child(2)').css({'display' : 'none'});
+         iwBackground.children(':nth-child(4)').css({'display' : 'none'});
+      });
+ }
+ 
+ var locations = [
+  ['Germantown', 39.181559, -77.2680677, "(301) 916-4900", "301-916-4900"],
+  ['Clarksburg', 39.2314419, -77.2517679, "(301) 540-4756", "301-540-4756"],
+  ['Urbana', 39.2822425, -77.389395, "(301) 874-6089", "301-874-6089"],
+]; 
+
+for (i = 0; i < locations.length; i++) {
+  pushMarkers(locations[i][1], locations[i][2], locations[i][0], locations[i][3], locations[i][4])
+}
+
+  function pushMarkers(coordx, coordy, name, phone, tel) {
+
+    var contentString = '<div class="infobox z-depth-2 text-center">\
+                            <div>'+name+'</div>\
+                            <a href="tel:'+tel+'">P: '+phone+'</a>\
+                        </div>';
+
+    var latLng = new google.maps.LatLng(coordx, coordy); 
+
+    var marker = new google.maps.Marker({
+          position: latLng,
+          animation: google.maps.Animation.DROP,
+          // icon: mapPinparks
+        });
+        markers.push(marker);
+    
+      bounds.extend(marker.position);
+      marker.setMap(map);
+      map.fitBounds(bounds);
+
+    google.maps.event.addListener(marker, 'click', function() {
+                infowindow.setContent(contentString);
+                infowindow.open(map,marker);
+                toggleBounce(marker);
+              });
+  }
+  //  Bounce function 
+  function toggleBounce(marker) {
+    if (marker.getAnimation() != null) {
+      marker.setAnimation(null);
+
+    } else {
+      marker.setAnimation(google.maps.Animation.BOUNCE);
+      setTimeout(function(){ marker.setAnimation(null); }, 750);
+    }
+  }
+
+  
+
+}/* Google Map End */
+
+
+}); /* End Of Document Ready */
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
