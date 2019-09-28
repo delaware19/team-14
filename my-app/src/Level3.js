@@ -30,10 +30,9 @@ function Level3() {
         </div></h4>
 
         <br></br>
-
         <p>
         <h3>
-       <a href="https://www.ontheissues.org/default.htm">See what legislation our politicians support!</a>
+       <a href="https://www.google.com">Google calendar link here...(a work in progress)</a>
        </h3>
 
         
