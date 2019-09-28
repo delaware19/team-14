@@ -48,6 +48,9 @@ function App() {
             across the nation. Rise has helped pass 27 bills to date. Will you be a part of the movement too?</p></div><br></br><br></br>
           <button class="btn"><Link to="/login">Login</Link></button> <br></br> <br></br>
           <button class="btn"><Link to="/createaccount">Create an Account</Link></button> <br></br>
+
+          <div class="container"><p> For more information on who we are, go to <a href="https://risenow.us" target="_blank">Rise Now</a>.</p></div>
+
         </Route>
 
       </Switch>

@@ -27,7 +27,7 @@ function Games() {
         <p>
           This is the Games page. <br></br><br></br>
 
-          <button class="btn"><Link to="/level1">Level 1</Link></button>
+          <button class="btn"><Link to="/level1">Level 4</Link></button>
         </p>
     </div>
   );
